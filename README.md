@@ -94,8 +94,8 @@ yarn lint
 
 ## License
 
-This project is proprietary and intended for internal use. Contact DESUN TECHNOLOGY PVT LTD the real owner for licensing details.
+This project is proprietary and intended for internal use. Contact  Abhi and group the real owner for licensing details.
 
 ---
 
-> Built with ❤️ by DESUN TECHNOLOGY PVT LTD.
+> Built by Abhi and group
