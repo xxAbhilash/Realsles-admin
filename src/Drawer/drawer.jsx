@@ -420,13 +420,13 @@ export default function DashboardLayoutBasic(props) {
           <div className="flex items-center gap-8">
             <Link
               style={{ textDecoration: "none" }}
-              to="https://real-sales.com"
+              to="https://mainreal-sales.vercel.app"
             >
               Home
             </Link>
             <Link
               style={{ textDecoration: "none" }}
-              to="https://www.real-sales.com/about"
+              to="https://mainreal-sales.vercel.app/about"
             >
               About
             </Link>
@@ -458,7 +458,7 @@ export default function DashboardLayoutBasic(props) {
                   }} // keeps dropdown visible a little longer
                 >
                   <Link
-                    to="https://www.real-sales.com/industries/food-equipments"
+                    to="https://mainreal-sales.vercel.app/industries/food-equipments"
                     // https://real-sales.vercel.app/industries/food-equipments
                     className="block px-4 py-2 hover:bg-[#FFDE5A] transition-colors duration-200"
                     style={{ 
@@ -488,7 +488,7 @@ export default function DashboardLayoutBasic(props) {
             </div>
             <Link
               style={{ textDecoration: "none" }}
-              to="https://www.real-sales.com/faq"
+              to="https://mainreal-sales.vercel.app/faq"
             >
               FAQ
             </Link>
