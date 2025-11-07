@@ -296,7 +296,7 @@ const UsersAndSessions = ({ currentSegment }) => {
       setSessionToDelete(null);
     }
   };
-  //Code for Deleting Users
+ {/* Code for Deleting Users */}
   // const handleDeleteUser = async () => {
   //   if (!userToDelete) return;
   //   try {
@@ -1096,6 +1096,12 @@ const UsersAndSessions = ({ currentSegment }) => {
                           sx={{ px: 2, py: 1.5 }}
                           className="!font-bold capitalize"
                         >
+                          Manager
+                        </TableCell>
+                        <TableCell
+                          sx={{ px: 2, py: 1.5 }}
+                          className="!font-bold capitalize"
+                        >
                           Role
                         </TableCell>
                         <TableCell
@@ -1130,6 +1136,9 @@ const UsersAndSessions = ({ currentSegment }) => {
                                 {user.email}
                               </TableCell>
                               <TableCell sx={{ px: 2, py: 1.5 }}>
+                                {user.manager_info?.manager_name || "-"}
+                              </TableCell>
+                              <TableCell sx={{ px: 2, py: 1 }}>
                                 <span>
                                   {user.role?.name
                                     ? user.role.name.replace(/_/g, " ")
@@ -1163,6 +1172,9 @@ const UsersAndSessions = ({ currentSegment }) => {
                                       color: "white",
                                     },
                                     marginRight: 1,
+                                    minWidth: "auto",
+                                    paddingX: 1,
+                                    fontSize: "0.875rem",
                                   }}
                                 >
                                   View Sessions
@@ -1178,6 +1190,9 @@ const UsersAndSessions = ({ currentSegment }) => {
                                       backgroundColor: "#45a049",
                                       color: "white",
                                     },
+                                    minWidth: "auto",
+                                    paddingX: 1,
+                                    fontSize: "0.875rem",
                                   }}
                                 >
                                   View Subscription
@@ -1196,8 +1211,8 @@ const UsersAndSessions = ({ currentSegment }) => {
                                   >
                                     <EditIcon className="!text-lg" />
                                   </div>
-                                  {/* Code for Deleting Users
-                                    <div
+                                  {/* Code for Deleting Users */}
+                                    {/* <div
                                     className="rounded border border-solid border-red-400 hover:bg-red-400 text-red-400 hover:text-white cursor-pointer py-1 px-4 w-fit"
                                     onClick={() => {
                                       setUserToDelete(user.user_id);
@@ -2099,8 +2114,8 @@ const UsersAndSessions = ({ currentSegment }) => {
         </Box>
       </Modal>
 
-      {/* Code for Deleting Users
-      <Dialog open={deleteUserDialogOpen} onClose={() => setDeleteUserDialogOpen(false)}>
+      {/* Code for Deleting Users */}
+      {/* <Dialog open={deleteUserDialogOpen} onClose={() => setDeleteUserDialogOpen(false)}>
         <DialogTitle>Delete User</DialogTitle>
         <DialogContent>
           The action cannot be reverted and the user will be permanently removed from the system.
@@ -2109,7 +2124,7 @@ const UsersAndSessions = ({ currentSegment }) => {
           <Button onClick={() => setDeleteUserDialogOpen(false)} color="primary">Cancel</Button>
           <Button onClick={handleDeleteUser} color="error">Delete</Button>
         </DialogActions>
-      </Dialog>
+      </Dialog> */}
       <Snackbar
         open={snackbar.open}
         autoHideDuration={4000}
@@ -2119,7 +2134,7 @@ const UsersAndSessions = ({ currentSegment }) => {
         <Alert onClose={() => setSnackbar({ ...snackbar, open: false })} severity={snackbar.severity} sx={{ width: '100%' }}>
           {snackbar.message}
         </Alert>
-      </Snackbar> */}
+      </Snackbar>
     </div>
   );
 };
