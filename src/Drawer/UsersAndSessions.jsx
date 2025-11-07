@@ -1173,8 +1173,10 @@ const UsersAndSessions = ({ currentSegment }) => {
                                     },
                                     marginRight: 1,
                                     minWidth: "auto",
-                                    paddingX: 1,
-                                    fontSize: "0.875rem",
+                                    paddingX: 0.75,
+                                    paddingY: 0.5,
+                                    fontSize: "0.7rem",
+                                    lineHeight: 1.2,
                                   }}
                                 >
                                   View Sessions
@@ -1191,8 +1193,10 @@ const UsersAndSessions = ({ currentSegment }) => {
                                       color: "white",
                                     },
                                     minWidth: "auto",
-                                    paddingX: 1,
-                                    fontSize: "0.875rem",
+                                    paddingX: 0.75,
+                                    paddingY: 0.5,
+                                    fontSize: "0.7rem",
+                                    lineHeight: 1.2,
                                   }}
                                 >
                                   View Subscription
