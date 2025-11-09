@@ -42,6 +42,8 @@ import LocalOfferIcon from "@mui/icons-material/LocalOffer";
 import Subscriptions from "./Subscriptions";
 import CardGiftcardIcon from "@mui/icons-material/CardGiftcard";
 import FreeTrialRequests from "./FreeTrialRequests";
+import FeedbackIcon from "@mui/icons-material/Feedback";
+import PlatformFeedback from "./PlatformFeedback";
 
 const NAVIGATION = [
   {
@@ -62,6 +64,11 @@ const NAVIGATION = [
     segment: "freeTrialRequests",
     title: "Free Trial Requests",
     icon: <CardGiftcardIcon />,
+  },
+  {
+    segment: "platformFeedback",
+    title: "Platform Feedback",
+    icon: <FeedbackIcon />,
   },
   {
     segment: "createPersona",
@@ -517,6 +524,7 @@ export default function DashboardLayoutBasic(props) {
             <Coaching currentSegment={currentSegment} />
             <Subscriptions currentSegment={currentSegment} />
             <FreeTrialRequests currentSegment={currentSegment} />
+            <PlatformFeedback currentSegment={currentSegment} />
           </Grid>
         </PageContainer>
       </DashboardLayout>

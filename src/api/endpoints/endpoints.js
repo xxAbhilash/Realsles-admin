@@ -54,4 +54,8 @@ export const endpoints = {
     reject: "/v1/free-trial-requests/",
     delete: "/v1/free-trial-requests/",
   },
+  platformFeedback: {
+    getAll: "/v1/platform-feedback/",
+    delete: "/v1/platform-feedback/",
+  },
 };
