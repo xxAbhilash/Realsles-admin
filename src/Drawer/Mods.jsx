@@ -52,6 +52,7 @@ const ModsFlo = ({ currentSegment }) => {
     { value: "{company_size_detail}" },
     { value: "{persona_products}" },
     { value: "{gender}" },
+    { value: "{scenario}" },
   ];
 
   const [mods, setMods] = useState([]);
